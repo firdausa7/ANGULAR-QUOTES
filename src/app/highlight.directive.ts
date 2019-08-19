@@ -14,6 +14,6 @@ export class HighlightDirective {
     this.highlight("highlight")
   }
   private highlight(highlight: string){
-    this.elem.nativeElement.style.backgroundColor = 'yellow';//style will be fill with yellow as bg color on click trigger
+    this.elem.nativeElement.style.backgroundColor = 'yellow';
   }
 }
