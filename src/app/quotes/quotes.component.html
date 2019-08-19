@@ -14,7 +14,9 @@
             <p><button class="btn btn-md btn-primary"(click)="voteIncrement(i)"> <i class="fas fa-thumbs-up"></i> <strong> Upvote</strong></button>{{Quotes.upvote}} <span class="voting"> |</span>
             <button class="btn btn-md btn-danger" (click)="voteDecrement(i)"> <i class="fas fa-thumbs-down"></i><strong> Downvote</strong>  </button>{{Quotes.downvote}}</p>
           
-
+            <div *ngFor='let quote of Quotes;let i = index'>
+              <h3 style="font-family: 'Jura', sans-serif;" id="{{i}}" appHighlight><strong>{{quote.name}}</strong> submitted on: {{quote.completeDate|date|uppercase}}</h3>
+              
             <button class="btn btn-sm btn-blue-grey" (click)='toggleDetails(i)'>Toggle Details</button><br>
             <app-quotes-detail *ngIf='Quotes.showDescription' [myquotes]='Quotes' (isComplete) = 'deleteQuotes($event,i)'></app-quotes-detail>
           </div>
