@@ -1,3 +1,13 @@
-.container-fluid{
-    background-color: transparent;
+.form-group{
+    background: transparent;
+}
+#complete {
+    background: transparent;
+}
+#description{
+    background: transparent;
+}
+#name{
+    background: transparent;
+
 }

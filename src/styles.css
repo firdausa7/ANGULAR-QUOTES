@@ -4,6 +4,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    background-position: center;
  }
  .v{
     background: rgba(63, 61, 61, 0.2);
