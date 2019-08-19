@@ -12,8 +12,8 @@ export class QuotesComponent implements OnInit {
   new Quotes(2, '.', 'CErsei', '', new Date(2019,6,17)),
   new Quotes(3, 'You know nothing Jon Snow', 'Ygritte','', new Date(2019,6,17)),
   new Quotes(4, 'Winter is coming', '','~Everyone', new Date(2019,6,18)),
-  new Quotes(5,'You Learn More From Failure Than From Success. Don’t Let It Stop You. Failure Builds Character.','Unknown', 'Joseph Adediji', new Date(2019,7,18)),
-  new Quotes(6,'If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You.','Steve Jobs', 'Joseph Adediji', new Date(2019,7,18)),
+  new Quotes(5,'','', '', new Date(2019,7,18)),
+  new Quotes(6,'.','', '', new Date(2019,7,18)),
 ];
 
 addNewQuotes(Quotes){
