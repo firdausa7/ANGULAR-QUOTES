@@ -20,7 +20,7 @@ addNewQuotes(Quotes){
     let myquotesLength = this.myquotes.length;
     Quotes.id = myquotesLength+1;
     Quotes.completeDate = new Date(Quotes.completeDate)
-    this.myquotes.unshift(Quotes)
+    this.myquotes.push(Quotes)
     alert(`Hi ${Quotes.publisher}, Your Quote has been Published to the Top of the List. Thank You!`);
   }
 
