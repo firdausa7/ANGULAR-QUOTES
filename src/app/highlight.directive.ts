@@ -5,7 +5,7 @@ import { Directive ,ElementRef, Input, HostListener} from '@angular/core';
 })
 export class HighlightDirective {
   constructor(private elem: ElementRef) { }
-  // @Input() quotes:Quotes;
+  @Input() quotes:Quotes;
 
   @HostListener("click") upVotes() {
     this.highlight("highlight")
