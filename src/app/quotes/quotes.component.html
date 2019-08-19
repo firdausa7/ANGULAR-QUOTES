@@ -1,22 +1,18 @@
 <div class="container">
-  <h1 class="">
-    <!-- <i class="fas fa-quote-left"></i><strong> Welcome to QuotesRank! </strong> <i class="fas fa-quote-right"></i> -->
-  </h1>
+ 
   <div class="row content">
-    <div class="col-md-8 border-bottom border-secondary">
-      <h2 class="text-center font-weight-bold animated bounce delay-2s"> Game of thronesQuotes:</h2>
+    <div class="col-md-8 ">
+      <h2 class="text-center font-weight-bold"> Game of thronesQuotes:</h2>
       <div class="list-group list-group-flush">
         <ul>
-          <div class="list-group-item v" *ngFor='let Quotes of myquotes; let i = index'>
+          <div class="v" *ngFor='let Quotes of myquotes; let i = index'>
             <h5>{{Quotes.name }} <br>
             </h5>
             <p>-- <em> {{Quotes.description}} </em> </p>
-            <p><button class="btn btn-md btn-primary"(click)="voteIncrement(i)"> <i class="fas fa-thumbs-up"></i> <strong> Upvote</strong></button>{{Quotes.upvote}} <span class="voting"> |</span>
-            <button class="btn btn-md btn-danger" (click)="voteDecrement(i)"> <i class="fas fa-thumbs-down"></i><strong> Downvote</strong>  </button>{{Quotes.downvote}}</p>
+            <p><button class="btn btn-md btn-primary"(click)="voteIncrement(i)"> <i class="thumbs-up"></i> <strong> Upvote</strong></button>{{Quotes.upvote}} <span class="voting"> |</span>
+            <button class="btn btn-md btn-danger" (click)="voteDecrement(i)"> <i class="thumbs-down"></i><strong> Downvote</strong>  </button>{{Quotes.downvote}}</p>
           
-            <!-- <div *ngFor='let quote of Quotes;let i = index'>
-              <h3 id="{{i}}" appHighlight><strong>{{quote.name}}</strong> submitted on: {{quote.completeDate|date|uppercase}}</h3>
-               -->
+            
             <button class="btn btn-sm btn-blue-grey" (click)='toggleDetails(i)'>Toggle Details</button><br>
             <app-quotes-detail *ngIf='Quotes.showDescription' [myquotes]='Quotes' (isComplete) = 'deleteQuotes($event,i)'></app-quotes-detail>
           </div>

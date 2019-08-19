@@ -5,3 +5,10 @@ body {
     background-repeat: no-repeat;
     color: white;
  }
+ .v{
+    background: rgba(63, 61, 61, 0.2);
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    
+}

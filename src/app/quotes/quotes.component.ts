@@ -11,9 +11,9 @@ export class QuotesComponent implements OnInit {
   new Quotes(1, 'I drink and I know things', 'Tyrion Lanister', '', new Date(2019,6,17)),
   new Quotes(2, 'When you play the game of thrones, you win, or you die.', 'Cersei Lanister', '', new Date(2019,6,17)),
   new Quotes(3, 'You know nothing Jon Snow', 'Ygritte','', new Date(2019,6,17)),
-  new Quotes(4, 'Winter is coming', '','~Everyone', new Date(2019,6,18)),
+  new Quotes(4, 'Winter is coming', 'Everyone','', new Date(2019,6,18)),
   new Quotes(5,'The things I do for love.','Jamie Lanister', '', new Date(2019,7,18)),
-  new Quotes(6,'Hold the door … Hodor.','', 'Hodor', new Date(2019,7,18)),
+  new Quotes(6,'Hold the door … Hodor.','Hodor', '', new Date(2019,7,18)),
 ];
 
 addNewQuotes(Quotes){
