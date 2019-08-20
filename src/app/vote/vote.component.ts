@@ -8,17 +8,16 @@ import { Quotes } from '../quotes';
 })
 export class VoteComponent implements OnInit {
   @Input() quotes :Quotes;
-  @Output() isComplete = new EventEmitter<boolean>();//listens to button click to display results
-//starting point for votes in two variables with 0 as default
+  @Output() isComplete = new EventEmitter<boolean>();
     uvotes = 0;
     dvotes = 0;
 
     upVote(){
-      this.uvotes = this.uvotes + 1;//adds one on mouse click
+      this.uvotes = this.uvotes + 1;
     }
 
     downVote(){
-      this.dvotes = this.dvotes + 1;//adds one per mouse click
+      this.dvotes = this.dvotes + 1;
     }
 
   constructor() { }
