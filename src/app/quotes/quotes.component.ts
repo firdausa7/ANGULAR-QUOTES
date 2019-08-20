@@ -21,7 +21,7 @@ addNewQuotes(Quotes){
     Quotes.id = myquotesLength+1;
     Quotes.completeDate = new Date(Quotes.completeDate)
     this.myquotes.push(Quotes)
-    alert(`Hi ${Quotes.publisher}, Your Quote has been Published to the Top of the List. Thank You!`);
+    alert(`Hi ${Quotes.publisher}, Your Quote has been Published. Thank You!`);
   }
 
   toggleDetails(index){

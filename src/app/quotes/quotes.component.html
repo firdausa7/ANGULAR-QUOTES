@@ -11,9 +11,11 @@
             <p>-- <em> {{Quotes.description}} </em> </p>
             <p><button class="btn btn-md btn-primary"(click)="voteIncrement(i)"> <i class="thumbs-up"></i> <strong> Upvote</strong></button>{{Quotes.upvote}} <span class="voting"> |</span>
             <button class="btn btn-md btn-danger" (click)="voteDecrement(i)"> <i class="thumbs-down"></i><strong> Downvote</strong>  </button>{{Quotes.downvote}}</p>
-          
+            <!-- <p id="{{i}}" appHighlight>{{Quotes.description}}</p> -->
+            <!-- <p><app-vote></app-vote></p> -->
+
             
-            <button class="btn btn-sm btn-blue-grey" (click)='toggleDetails(i)'>Toggle Details</button><br>
+            <button class="btn btn-primary" (click)='toggleDetails(i)'>Toggle Details</button><br>
             <app-quotes-detail *ngIf='Quotes.showDescription' [myquotes]='Quotes' (isComplete) = 'deleteQuotes($event,i)'></app-quotes-detail>
           </div>
         </ul>
@@ -24,9 +26,10 @@
     <div class="col-md-4">
         <app-quotes-form (addQuotes)="addNewQuotes($event)"></app-quotes-form>
     </div>
-    <!-- <p *ngIf='Quotes.length > 5'>You have too many quotes</p> -->
 
   </div>
 
 
 </div>
+    <!-- <p *ngIf='Quotes.length > 5'>You have too many quotes</p> -->
+ 
